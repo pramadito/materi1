@@ -256,7 +256,7 @@ console.log(points);
 points.sort((a, b) => a - b); // asc (kecil ke besar)
 console.log(points);
 
-points.sort((a, b) => b - a);
+points.sort((a, b) => b - a); // dec (besar ke kecil)
 console.log(points);
 
 // REVERSE -> Membalikkan urutan element dalam Array
