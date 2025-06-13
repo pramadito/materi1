@@ -326,3 +326,25 @@ console.log(result7);
 const fruits5: string[] = ["banana", "orange", "apple", "mango", "lemon"];
 console.log(fruits5.includes("banana"));
 console.log(fruits5.includes("asdfasdfa"));
+
+
+/**
+ * Rotates a 2D matrix 90 degrees clockwise in-place.
+ * @param matrix The 2D array to be rotated
+ */
+function rotate(matrix: number[][]): void {
+    const size = matrix.length;
+    
+    // (1) Transpose the matrix
+    for (let y = 0; y < size; y++) {
+        for (let x = y; x < size; x++) {
+            // Swap elements at [x][y] and [y][x]
+            [matrix[x][y], matrix[y][x]] = [matrix[y][x], matrix[x][y]];
+        }
+    }
+    
+    // (2) Reverse each row
+    for (let y = 0; y < size; y++) {
+        matrix[y].reverse();
+    }
+}

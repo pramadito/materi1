@@ -284,6 +284,7 @@ class Manager2 extends Employee2 {
 
 }
 
+
 const manager = new Manager2("siti", 1200000, "HR");
 
 console.log(manager.name);

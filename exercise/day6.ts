@@ -167,10 +167,13 @@ class Transaction {
     // tambahin total di property total.
   }
 
-  showDetail(){
-    return 
-        this.cart;
+  showDetail() {
+    return {
+      total: this.total,
+      cart: this.cart,
+    };
   }
+
 
   showTotal() {
     return this.total;
